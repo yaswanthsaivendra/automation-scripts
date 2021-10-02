@@ -48,7 +48,7 @@ class S(Thread):
             if count1 > 3:
                 print("Check internet connection")
                 exit()
-            time.sleep(1)
+            time.sleep(10)
             #driver.close()
 
 class SS(Thread):
@@ -78,15 +78,15 @@ class SS(Thread):
                 driver = webdriver.Chrome(executable_path="C:\Web driver\chromedriver_win32\chromedriver.exe")
                 print("skipped")
                 pass
-            time.sleep(2)
+            time.sleep(5)
             driver.execute_script("window.scrollTo(0, 500)")
-            time.sleep(2)
+            time.sleep(5)
             driver.execute_script("window.scrollTo(500, 1000)")
-            time.sleep(2)
+            time.sleep(5)
             driver.execute_script("window.scrollTo(1000, 1500)")
-            time.sleep(2)
+            time.sleep(5)
             driver.execute_script("window.scrollTo(2000, 2500)")
-            time.sleep(2)
+            time.sleep(5)
             driver.execute_script("window.scrollTo(2000, 2500)")
             count = count + 1
             print(str(count) + '-second')
@@ -123,13 +123,13 @@ class SSS(Thread):
                 driver = webdriver.Chrome(executable_path="C:\Web driver\chromedriver_win32\chromedriver.exe")
                 print("skipped")
                 pass
-            time.sleep(2)
+            time.sleep(5)
             driver.execute_script("window.scrollTo(0, 500)")
-            time.sleep(2)
+            time.sleep(5)
             driver.execute_script("window.scrollTo(500, 1000)")
-            time.sleep(2)
+            time.sleep(5)
             driver.execute_script("window.scrollTo(1000, 1500)")
-            time.sleep(2)
+            time.sleep(5)
             driver.execute_script("window.scrollTo(2000, 2500)")
             time.sleep(2)
             driver.execute_script("window.scrollTo(2000, 2500)")
